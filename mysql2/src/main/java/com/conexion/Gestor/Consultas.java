@@ -46,7 +46,7 @@ public class Consultas extends Conexion {
             pstm = getConexion().prepareStatement(sql);
 
         } catch (Exception e) {
-            System.out.println("error al mostrar pstm");
+            System.out.println("error al mostrar pstm" +e.getMessage());
         }
 
         return pstm;
